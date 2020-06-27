@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Recipe from "./Recipe";
-import Media from 'react-media';
+import Media from "react-media";
 
 const App = () => {
   const APP_ID = "d5b552e7";

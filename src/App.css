@@ -1,29 +1,48 @@
-.App {
-  min-height: 100vg;
-  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);}
+/** @format */
 
-.search-form{
+.App {
+  min-height: 100vh;
+  background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+}
+
+.search-form {
   min-height: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.search-bar{
-  width:50%;
+.search-bar {
+  width: 50%;
   border: none;
   padding: 10px;
 }
 
-.search-button{
+.search-button {
   background: lightcoral;
   border: none;
   padding: 10px 20px;
   color: white;
 }
 
-.recipes{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.recipes {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  /* grid-template-rows: 90vh 90vh; */
 }
+
+@media (max-width: 1024px) {
+  .recipes {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .recipes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+
